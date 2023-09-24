@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <meta name="descraption" content="a">
+               <title>Mobile Shop</title>
+               <link rel="stylesheet" href="Style.css"/>
+			   <link rel="preconnect" href="https://fonts.gstatic.com">
+               <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+			   
+			   <script>
+			   		function Delete(e){
+			         let items = [];
+			         JSON.parse(localStorage.getItem("items")).map(data=>{
+			         if(data.id != e.parentElement.parentElement.children[0].textContent){					
+					 items.push(data);
+				     }
+			        });
+			         localStorage.setItem("items",JSON.stringify(items));
+			          window.location.reload();
+		             };
+	          </script>	
+
+    </head>
+<body>
+
+	<div class="head">
+	 <div class="logo"><img src="logo.png" width="150px">
+	 </div>
+	 <div class="dec">
+	  	  <h1>Wherever you go, There we are.</h1>
+	      <p>Feel the power in your hands.</p>
+	 </div>
+	 <nav>
+	  <ul>
+	   <li><a href="Home.html">Home</a></li>
+	   <li><a href="Shop.html">Products</a></li> 
+	   <li><a href="About.html">About us</a></li>
+	   <li><a href="Log.html">Login</a></li> 
+	   <li class="iconShopping"><button class="shopIcon">Cart &#128722</button> </li>
+	  </ul>
+	 </nav>
+    </div>
+	<div class="cat">
+     <table class="table1">
+	  <tr>
+	  <td> <input type="button" class="btn" value="Mobiles" onclick="mob()"></td>
+	  <td><input type="button" class="btn" value="Accessories" onclick="acs()"></td>
+	  </tr>
+	 </table>	 
+	</div>
+	
+	<!--start table---> 
+     <table class="tab" id="fold">
+
+	  <div class="fold">
+	   <tr>
+		<td>
+		 <p class="model">Samsung Z Fold 2</p><br>
+         <img src="FoldImg/ZF2.png" class="img">
+		 <p class="price">Price:$1999</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openZF2()"><br>
+	    </td>	   
+	  
+		<td>
+		 <p class="model">Huawei Mate XS</p><br>
+         <img src="FoldImg/MXS.png" class="img">
+		 <p class="price">Price:$2999</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openMXS()">
+	    </td>
+
+		<td>
+		 <p class="model">LG Wing</p><br>
+         <img src="FoldImg/W.png" class="img">
+		 <p class="price">Price:$999</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openW()">
+	    </td>
+		
+		<td>
+		 <p class="model">Samsung Z Flip</p><br>
+         <img src="FoldImg/F.png" class="img">
+		 <p class="price">Price:$899</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openF()">
+	    </td>
+		
+	    <td>
+		 <p class="model">Microsoft surface duo</p><br>
+         <img src="FoldImg/D.png" class="img">
+		 <p class="price">Price:$1399</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openD()">
+	    </td>
+     </tr>	
+	</div>
+  
+ </table>
+<!--End table--->
+
+	<!--start table---> 
+     <table class="tab" id="sam">
+	 
+	  <div class="fold">
+	   <tr>
+		<td>
+		 <p class="model">Samsung Note20 Ultra</p><br>
+         <img src="SamImg/Note20U.png" class="img">
+		 <p class="price">Price:$1099</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openN20U()">
+	    </td>	   
+	  
+		<td>
+		 <p class="model">Samsung Note 20</p><br>
+         <img src="SamImg/Note20.png" class="img">
+		 <p class="price">Price:$799</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openN20()">
+	    </td>
+
+		<td>
+		 <p class="model">Samsung S20 Ultra</p><br>
+         <img src="SamImg/S20U.png" class="img">
+		 <p class="price">Price:$1090</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openS20U()">
+	    </td>
+		
+		<td>
+		 <p class="model">Samsung S20 Plus</p><br>
+         <img src="SamImg/S20P.png" class="img">
+		 <p class="price">Price:$749</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openS20P()">
+	    </td>
+		
+	    <td>
+		 <p class="model">Samsung S20 fe</p><br>
+         <img src="SamImg/S20Fe.png" class="img">
+		 <p class="price">Price:$599</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openS20FE()">
+	    </td>
+     </tr>	
+	  </div>
+  
+ </table>
+<!--End table--->
+
+	<!--start table---> 
+     <table class="tab" id="sam">
+	  <div class="fold">
+	   <tr>
+		<td>
+		 <p class="model">Samsung Note 10 Plus</p><br>
+         <img src="SamImg/Note10P.png" class="img">
+		 <p class="price">Price:$699</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openN10P()">
+	    </td>	   
+	  
+		<td>
+		 <p class="model">Samsung A71</p><br>
+         <img src="SamImg/A71.png" class="img">
+		 <p class="price">Price:$399</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openA71()">
+	    </td>
+
+		<td>
+		 <p class="model">Samsung M51</p><br>
+         <img src="SamImg/M51.png" class="img">
+		 <p class="price">Price:$410</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openM51()">
+	    </td>
+		
+		<td>
+		 <p class="model">Samsung M31</p><br>
+         <img src="SamImg/M31.png" class="img">
+		 <p class="price">Price:$289</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openM31()">
+	    </td>
+		
+	    <td>
+		 <p class="model">Samsung A21s</p><br>
+         <img src="SamImg/A21S.png" class="img">
+		 <p class="price">Price:$219</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openA21S()">
+	    </td>
+     </tr>	
+	  </div>
+  
+ </table>
+<!--End table--->
+
+
+<!--Start table-->
+	<table class="tab" id="sam">
+	 
+	  <div class="fold">
+	   <tr>
+		<td>
+		 <p class="model">Apple Iphone 12 pro max</p><br>
+         <img src="AppleImg/Iphone12PM.png" class="img">
+		 <p class="price">Price:$1099</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="open12PM()">
+	    </td>	   
+	  
+		<td>
+		 <p class="model">Apple Iphone 12 pro</p><br>
+         <img src="AppleImg/Iphone12P.png" class="img">
+		 <p class="price">Price:$999</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="open12P()">
+	    </td>
+
+		<td>
+		 <p class="model">Apple Iphone 12</p><br>
+         <img src="AppleImg/Iphone12.png" class="img">
+		 <p class="price">Price:$699</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="open12()">
+	    </td>
+		
+		<td>
+		 <p class="model">Apple Iphone 11 pro max</p><br>
+         <img src="AppleImg/Iphone11PM.png" class="img">
+		 <p class="price">Price:$899</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="open11PM()">
+	    </td>
+		
+	    <td>
+		 <p class="model">Apple Iphone 11 pro</p><br>
+         <img src="AppleImg/Iphone11P.png" class="img">
+		 <p class="price">Price:$799</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="open11P()">
+	    </td>
+     </tr>	
+	  </div>
+  
+ </table>
+<!--End table--->
+
+	<!--start table---> 
+     <table class="tab" id="apple">
+	  <div class="fold">
+	   <tr>
+		<td>
+		 <p class="model">Apple Iphone 11</p><br>
+         <img src="AppleImg/Iphone11.png" class="img">
+		 <p class="price">Price:$499</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="open11()">
+	    </td>	   
+	  
+		<td>
+		 <p class="model">Apple Iphone Xr</p><br>
+         <img src="AppleImg/IphoneXr.png" class="img">
+		 <p class="price">Price:$399</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openXR()">
+	    </td>
+
+		<td>
+		 <p class="model">Apple Iphone Xs max</p><br>
+         <img src="AppleImg/IphoneXM.png" class="img">
+		 <p class="price">Price:$549</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openXSM()">
+	    </td>
+		
+		<td>
+		 <p class="model">Apple Iphone Xs</p><br>
+         <img src="AppleImg/IphoneX.png" class="img">
+		 <p class="price">Price:$449</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openXS()">
+	    </td>
+		
+	    <td>
+		 <p class="model">Apple Iphone Se 2020</p><br>
+         <img src="AppleImg/IphoneSe.png" class="img">
+		 <p class="price">Price:$349</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openSE()">
+	    </td>
+     </tr>	
+	  </div>
+  
+ </table>
+<!--End table--->
+
+	<!--start table---> 
+     <table class="tab" id="huawei">
+
+	  <div class="fold">
+	   <tr>
+		<td>
+		 <p class="model">Huawei Mate 40 pro</p><br>
+         <img src="huaweiImg/M40.png" class="img">
+		 <p class="price">Price:$1299</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openM40P()">
+	    </td>	   
+	  
+		<td>
+		 <p class="model">Huawei P40 pro</p><br>
+         <img src="huaweiImg/P40.png" class="img">
+		 <p class="price">Price:$1099</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openP40P()">
+	    </td>
+
+		<td>
+		 <p class="model">Huawei Nova 7 pro</p><br>
+         <img src="huaweiImg/N7P.png" class="img">
+		 <p class="price">Price:$749</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openN7P()">
+	    </td>
+		
+		<td>
+		 <p class="model">Huawei Nova 5t</p><br>
+         <img src="huaweiImg/N5T.png" class="img">
+		 <p class="price">Price:$319</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openN5T()">
+	    </td>
+		
+	    <td>
+		 <p class="model">Huawei Y9a</p><br>
+         <img src="huaweiImg/Y9a.png" class="img">
+		 <p class="price">Price:$299</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openY9A()">
+	    </td>
+     </tr>	
+	  </div>
+  
+ </table>
+<!--End table--->
+
+	<!--start table---> 
+     <table class="tab" id="onePlus">
+
+	  <div class="fold">
+	   <tr>
+		<td>
+		 <p class="model">OnePlus 8t</p><br>
+         <img src="OnePlusImg/8T.png" class="img">
+		 <p class="price">Price:$749</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="open8T()">
+	    </td>	   
+	  
+		<td>
+		 <p class="model">OnePlus 8 pro</p><br>
+         <img src="OnePlusImg/8P.png" class="img">
+		 <p class="price">Price:$924</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="open8P()">
+	    </td>
+
+		<td>
+		 <p class="model">OnePlus 7t</p><br>
+         <img src="OnePlusImg/7T.png" class="img">
+		 <p class="price">Price:$399</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="open7T()">
+	    </td>
+		
+		<td>
+		 <p class="model">OnePlus 7 pro</p><br>
+         <img src="OnePlusImg/7P.png" class="img">
+		 <p class="price">Price:$479</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="open7P()">
+	    </td>
+		
+	    <td>
+		 <p class="model">OnePlus nord</p><br>
+         <img src="OnePlusImg/N.png" class="img">
+		 <p class="price">Price:$349</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openN()">
+	    </td>
+     </tr>	
+	  </div>
+  
+ </table>
+<!--End table--->
+
+
+	<!--start table---> 
+     <table class="tab" id="oppo">
+
+	  <div class="fold">
+	   <tr>
+		<td>
+		 <p class="model">Oppo Find X2 pro</p><br>
+         <img src="OppoImg/OX2.png" class="img">
+		 <p class="price">Price:$949</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openX2()">
+	    </td>	   
+	  
+		<td>
+		 <p class="model">Oppo Reno4 Pro</p><br>
+         <img src="OppoImg/OR4.png" class="img">
+		 <p class="price">Price:$545</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openR4P()">
+	    </td>
+
+		<td>
+		 <p class="model">Oppo Reno4</p><br>
+         <img src="OppoImg/OR.png" class="img">
+		 <p class="price">Price:$399</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openR4()">
+	    </td>
+		
+		<td>
+		 <p class="model">Oppo A93</p><br>
+         <img src="OppoImg/OA93.png" class="img">
+		 <p class="price">Price:$319</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openA93()">
+	    </td>
+		
+	    <td>
+		 <p class="model">Oppo A73</p><br>
+         <img src="OppoImg/OA73.png" class="img">
+		 <p class="price">Price:$249</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openA73()">
+	    </td>
+     </tr>	
+	  </div>
+  
+ </table>
+<!--End table--->
+
+	<!--start table---> 
+     <table class="tab" id="xiaomi">
+
+	  <div class="fold">
+	   <tr>
+		<td>
+		 <p class="model">Xiaomi Mi 11</p><br>
+         <img src="XiaomiImg/M11.png" class="img">
+		 <p class="price">Price:$610</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openM11()">
+	    </td>	   
+	  
+		<td>
+		 <p class="model">Xiaomi Mi 10t</p><br>
+         <img src="XiaomiImg/M10T.png" class="img">
+		 <p class="price">Price:$359</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openM10T()">
+	    </td>
+
+		<td>
+		 <p class="model">Xiaomi Mi Note 10 lite</p><br>
+         <img src="XiaomiImg/N10L.png" class="img">
+		 <p class="price">Price:$299</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openN10L()">
+	    </td>
+		
+		<td>
+		 <p class="model">Xiaomi Redmi Note 9 pro</p><br>
+         <img src="XiaomiImg/N9P.png" class="img">
+		 <p class="price">Price:$199</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openN9P()">
+	    </td>
+		
+	    <td>
+		 <p class="model">Xiaomi Redmi 9</p><br>
+         <img src="XiaomiImg/9.png" class="img">
+		 <p class="price">Price:$139</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="open9()">
+	    </td>
+     </tr>	
+	  </div>
+  
+ </table>
+<!--End table--->
+	
+	
+	<!--start table---> 
+     <table class="tab" id="realme">
+
+	  <div class="fold">
+	   <tr>
+		<td>
+		 <p class="model">Realme X3 SuperZoom</p><br>
+         <img src="RealmeImg/X3.png" class="img">
+		 <p class="price">Price:$549</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openX3()">
+	    </td>	   
+	  
+		<td>
+		 <p class="model">Realme 7 pro</p><br>
+         <img src="RealmeImg/7P.png" class="img">
+		 <p class="price">Price:$319</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openR7P()">
+	    </td>
+
+		<td>
+		 <p class="model">Realme 7</p><br>
+         <img src="RealmeImg/7.png" class="img">
+		 <p class="price">Price:$279</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openR7()">
+	    </td>
+		
+		<td>
+		 <p class="model">Realme 6i</p><br>
+         <img src="RealmeImg/6i.png" class="img">
+		 <p class="price">Price:$169</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="open6I()">
+	    </td>
+		
+	    <td>
+		 <p class="model">Realme C17</p><br>
+         <img src="RealmeImg/C17.png" class="img">
+		 <p class="price">Price:$189</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openC17()">
+	    </td>
+     </tr>	
+	  </div>
+  
+ </table>
+<!--End table--->	
+
+
+	<!--start table---> 
+     <table class="tab" id="nokia">
+
+	  <div class="fold">
+	   <tr>
+		<td>
+		 <p class="model">Nokia 9 PureView</p><br>
+         <img src="NokiaImg/9.png" class="img">
+		 <p class="price">Price:$649</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openN9()">
+	    </td>	   
+	  
+		<td>
+		 <p class="model">Nokia 8.3</p><br>
+         <img src="NokiaImg/8.png" class="img">
+		 <p class="price">Price:$549</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="open8()">
+	    </td>
+
+		<td>
+		 <p class="model">Noki.7.3</p><br>
+         <img src="NokiaImg/7.png" class="img">
+		 <p class="price">Price:$399</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="open7()">
+	    </td>
+		
+		<td>
+		 <p class="model">Nokia 5.3</p><br>
+         <img src="NokiaImg/5.png" class="img">
+		 <p class="price">Price:$199</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="open5()">
+	    </td>
+		
+	    <td>
+		 <p class="model">Nokia 1 Plus</p><br>
+         <img src="NokiaImg/p.png" class="img">
+		 <p class="price">Price:$69</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="open1()">
+	    </td>
+     </tr>	
+	  </div>
+
+ </table>
+<!--End table--->	
+
+
+<!-------Cart------------>
+<div class="cartPage">
+ <div class="cart">
+			<button class="CartClose">X</button>
+			<h1>Cart</h1>
+			<table class="CartTableSh" border="5"></table>
+			<button id="CartBuy" onclick="buy()">Buy now</button>
+ </div>
+</div>		
+
+
+<!-------footer------------>
+  <div class="footer">
+    <div class="FBox">
+      <div class="FRow">
+        <div class="FCol">
+          <h3>Download Our App</h3>
+           <p>Download App For Android And IOS </p>
+            <div class="logos">
+             <img src="play-store.png">
+              <img src="app-store.png">
+            </div>
+        </div>
+         <div class="FCol2">
+           <img src="logo.png" >
+            <p>Bset place to shop Mobiles world!</p>
+         </div>
+          <div class="FCol3">
+            <h3>Useful Links </h3>
+             <ul>
+               <li>Our services</li>
+               <li>Refund and exchange policy</li>
+               <li>Our branches</li>
+               <li>Technical support</li>
+             </ul>
+          </div>
+           <div class="FCol4">
+            <h3>FOLLOW US </h3>
+             <ul>
+               <li>Facebook</li>
+               <li>Twitter</li>
+               <li>Instagram</li>
+               <li>You Tube</li>
+             </ul>
+           </div>
+      </div>
+    </div>
+  </div>
+
+
+    <script src="MobileShop.js">
+	</script>			   
+</body>
+</html>		

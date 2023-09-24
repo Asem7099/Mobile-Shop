@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <meta name="descraption" content="a">
+               <title>Mobile Shop</title>
+               <link rel="stylesheet" href="Style.css"/>
+			   <link rel="preconnect" href="https://fonts.gstatic.com">
+               <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+<body>
+ <div id="test"></div>
+	<div class="head">
+	 <div class="logo"><img src="logo.png" width="150px">
+	 </div>
+	 	 <div class="dec">
+	  	  <h1>Wherever you go, There we are.</h1>
+	      <p>Feel the power in your hands.</p>
+	 </div>
+	 <nav>
+	  <ul>
+	   <li><a href="Home.html">Home</a></li>
+	   <li><a href="Shop.html">Products</a></li> 
+	   <li><a href="About.html">About us</a></li>
+	   <li><a href="Log.html">Login</a></li> 
+	  </ul>
+	 </nav>
+    </div>
+	
+
+	
+  <div class="LogPage">
+   <div class="box">
+    <div class="row">
+       <div class="col2">
+         <div class="form">
+           <div class="formBtn">
+             <span>Login</span>
+              <span>Register</span>
+              <hr>
+           </div>
+	    <form action="insert.php" method="POST">
+  <table>
+   <tr>
+    <td>Name :</td>
+    <td><input type="text" name="username" required></td>
+   </tr>
+   <tr>
+    <td>Password :</td>
+    <td><input type="password" name="password" required></td>
+   </tr>
+   <tr>
+    <td>Gender :</td>
+    <td>
+     <input type="radio" name="gender" value="m" required>Male
+     <input type="radio" name="gender" value="f" required>Female
+    </td>
+   </tr>
+   <tr>
+    <td>Email :</td>
+    <td><input type="email" name="email" required></td>
+   </tr> 
+   <tr>
+    <td>Phone no :</td>
+    <td>
+     <select name="phoneCode" required>
+      <option selected hidden value="">Select Code</option>
+      <option value="977">977</option>
+      <option value="978">978</option>
+      <option value="979">979</option>
+      <option value="973">973</option>
+      <option value="972">972</option>
+      <option value="974">974</option>
+     </select>
+     <input type="phone" name="phone" required>
+    </td>
+   </tr>
+   <tr>
+    <td><input type="submit" value="Submit"></td>
+   </tr>
+  </table>
+ </form>	
+         </div>
+       </div>
+    </div>
+   </div>
+  </div>
+
+	
+<!-------footer------------>
+  <div class="footer">
+    <div class="FBox">
+      <div class="FRow">
+        <div class="FCol">
+          <h3>Download Our App</h3>
+           <p>Download App For Android And IOS </p>
+            <div class="logos">
+             <img src="play-store.png">
+              <img src="app-store.png">
+            </div>
+        </div>
+         <div class="FCol2">
+           <img src="logo.png" >
+            <p>Bset place to shop Mobiles world!</p>
+         </div>
+          <div class="FCol3">
+            <h3>Useful Links </h3>
+             <ul>
+               <li>Our services</li>
+               <li>Refund and exchange policy</li>
+               <li>Our branches</li>
+               <li>Technical support</li>
+             </ul>
+          </div>
+           <div class="FCol4">
+            <h3>FOLLOW US </h3>
+             <ul>
+               <li>Facebook</li>
+               <li>Twitter</li>
+               <li>Instagram</li>
+               <li>You Tube</li>
+             </ul>
+           </div>
+      </div>
+    </div>
+  </div>	
+   
+	<script src="MobileShop.js"></script>	
+</body>
+</html>	

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <meta name="descraption" content="a">
+               <title>Mobile Shop</title>
+               <link rel="stylesheet" href="Style.css"/>
+			   <link rel="preconnect" href="https://fonts.gstatic.com">
+               <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+			   
+			   <script>
+			   		function Delete(e){
+			         let items = [];
+			         JSON.parse(localStorage.getItem("items")).map(data=>{
+			         if(data.id != e.parentElement.parentElement.children[0].textContent){					
+					 items.push(data);
+				     }
+			        });
+			         localStorage.setItem("items",JSON.stringify(items));
+			          window.location.reload();
+		             };
+	          </script>	
+    </head>
+<body>
+
+	<div class="head">
+	 <div class="logo"><img src="logo.png" width="150px">
+	 </div>
+	 <div class="dec">
+	  	  <h1>Wherever you go, There we are.</h1>
+	      <p>Feel the power in your hands.</p>
+	 </div>
+	 <nav>
+	  <ul>
+	   <li><a href="Home.html">Home</a></li>
+	   <li><a href="Shop.html">Products</a></li> 
+	   <li><a href="About.html">About us</a></li>
+	   <li><a href="Log.html">Login</a></li> 
+	   <li class="iconShopping"><button class="shopIcon">Cart &#128722</button> </li>
+	  </ul>
+	 </nav>
+    </div>
+	<div class="cat">
+     <table class="table1">
+	  <tr>
+	  <td> <input type="button" class="btn" value="Mobiles" onclick="mob()"></td>
+	  <td><input type="button" class="btn" value="Accessories" onclick="acs()"></td>
+	  </tr>
+	 </table>	 
+	</div>
+	
+<!--start table---> 
+     <table class="tab" id="fold">
+
+	  <div class="fold">
+	   <tr>
+		<td>
+		 <p class="model">Apple AirPods Max</p><br>
+         <img src="acsImg/airmax.png" class="img">
+		 <p class="price">Price:$549</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openAM()"><br>
+	    </td>	   
+	  
+		<td>
+		 <p class="model">Apple AirPods pro</p><br>
+         <img src="acsImg/ap.png" class="img">
+		 <p class="price">Price:$239</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openAP()">
+	    </td>
+
+		<td>
+		 <p class="model">Apple AirPods 2</p><br>
+         <img src="acsImg/ap2.png" class="img">
+		 <p class="price">Price:$185</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openAP2()">
+	    </td>
+		
+		<td>
+		 <p class="model">Samsung Buds live</p><br>
+         <img src="acsImg/sb.png" class="img">
+		 <p class="price">Price:$139</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openSB">
+	    </td>
+		
+	    <td>
+		 <p class="model">Samsung Buds plus</p><br>
+         <img src="acsImg/sbp.png" class="img">
+		 <p class="price">Price:$99</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openSBP()">
+	    </td>
+     </tr>	
+	  </div>
+  
+ </table>
+<!--End table--->
+
+	<!--start table---> 
+     <table class="tab" id="sam">
+	 
+	  <div class="fold">
+	   <tr>
+		<td>
+		 <p class="model">Huawei FreeBuds 3</p><br>
+         <img src="acsImg/hf.png" class="img">
+		 <p class="price">Price:$119</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openHF3()">
+	    </td>	   
+
+		<td>
+		 <p class="model">Huawei FreeBuds lite</p><br>
+         <img src="acsImg/hfl.png" class="img">
+		 <p class="price">Price:$69</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openHFL()">
+	    </td>
+
+		<td>
+		 <p class="model">Apple watch series 6</p><br>
+         <img src="acsImg/aw6.png" class="img">
+		 <p class="price">Price:$399</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openAW6()">
+	    </td>
+		
+		<td>
+		 <p class="model">Apple watch series 5</p><br>
+         <img src="acsImg/aw5.png" class="img">
+		 <p class="price">Price:$299</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openAW5()">
+	    </td>
+		
+	    <td>
+		 <p class="model">Samsung Watch 3</p><br>
+         <img src="acsImg/sw3.png" class="img">
+		 <p class="price">Price:$249</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openSW()">
+	    </td>
+     </tr>	
+	  </div>
+  
+ </table>
+<!--End table--->
+
+	<!--start table---> 
+     <table class="tab" id="sam">
+	  <div class="fold">
+	   <tr>
+		<td>
+		 <p class="model">Huawei watch GT2 pro</p><br>
+         <img src="acsImg/hw.png" class="img">
+		 <p class="price">Price:$299</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openHW()">
+	    </td>	   
+	  
+		<td>
+		 <p class="model">Honor magic watch 2</p><br>
+         <img src="acsImg/how.png" class="img">
+		 <p class="price">Price:$129</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openHOW()">
+	    </td>
+
+		<td>
+		 <p class="model">Huawei watch fit</p><br>
+         <img src="acsImg/hwf.png" class="img">
+		 <p class="price">Price:$99</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openHWF()">
+	    </td>
+		
+		<td>
+		 <p class="model">Xiaomi Mi Band 5</p><br>
+         <img src="acsImg/miB.png" class="img">
+		 <p class="price">Price:$35</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openMB()">
+	    </td>
+		
+	    <td>
+		 <p class="model">Honor Band 5</p><br>
+         <img src="acsImg/hoB.png" class="img">
+		 <p class="price">Price:$49</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openHB()">
+	    </td>
+     </tr>	
+	  </div>
+  
+ </table>
+<!--End table--->
+
+<!-------Cart------------>
+<div class="cartPage">
+ <div class="cart">
+			<button class="CartClose">X</button>
+			<h1>Cart</h1>
+			<table class="CartTableSh" border="5"></table>
+			<button id="CartBuy" onclick="buy()">Buy now</button>
+ </div>
+</div>		
+
+<!-------footer------------>
+  <div class="footer">
+    <div class="FBox">
+      <div class="FRow">
+        <div class="FCol">
+          <h3>Download Our App</h3>
+           <p>Download App For Android And IOS </p>
+            <div class="logos">
+             <img src="play-store.png">
+              <img src="app-store.png">
+            </div>
+        </div>
+         <div class="FCol2">
+           <img src="logo.png" >
+            <p>Bset place to shop Mobiles world!</p>
+         </div>
+          <div class="FCol3">
+            <h3>Useful Links </h3>
+             <ul>
+               <li>Our services</li>
+               <li>Refund and exchange policy</li>
+               <li>Our branches</li>
+               <li>Technical support</li>
+             </ul>
+          </div>
+           <div class="FCol4">
+            <h3>FOLLOW US </h3>
+             <ul>
+               <li>Facebook</li>
+               <li>Twitter</li>
+               <li>Instagram</li>
+               <li>You Tube</li>
+             </ul>
+           </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="MobileShop.js"></script>			   
+</body>
+</html>		

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <meta name="descraption" content="a">
+               <title>Mobile Shop</title>
+               <link rel="stylesheet" href="Style.css"/>
+			   <link rel="preconnect" href="https://fonts.gstatic.com">
+               <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+			   
+			   <script>
+			   		function Delete(e){
+			         let items = [];
+			         JSON.parse(localStorage.getItem("items")).map(data=>{
+			         if(data.id != e.parentElement.parentElement.children[0].textContent){					
+					 items.push(data);
+				     }
+			        });
+			          localStorage.setItem("items",JSON.stringify(items));
+			          window.location.reload();
+		             };
+	          </script>	
+			   
+    </head>
+<body>
+
+	<div class="head">
+	 <div class="logo"><img src="logo.png" width="150px">
+	 </div>
+	 <div class="dec">
+	  	  <h1>Wherever you go, There we are.</h1>
+	      <p>Feel the power in your hands.</p>
+	 </div>
+	 <nav>
+	  <ul>
+	   <li><a href="Home.html">Home</a></li>
+	   <li><a href="Shop.html">Products</a></li> 
+	   <li><a href="About.html">About us</a></li>
+	   <li><a href="Log.html">Login</a></li> 
+	   <li class="iconShopping"><button class="shopIcon">Cart &#128722</button></li> 
+	  </ul>
+	 </nav>
+    </div>
+	<div class="cat">
+     <table class="table1">
+	  <tr>
+	  <td> <input type="button" class="btn" value="Mobiles" onclick="mob()"></td>
+	  <td> <input type="button" class="btn" value="Accessories" onclick="acs()"></td>
+	  </tr>
+	 </table>	 
+	</div>
+  	
+<!--start table---> 
+     <table class="tab" id="fold">
+	 <caption class="cap">_____________________Latest devices_____________________</caption>
+	  <div class="fold">
+	   <tr>
+		<td>
+		 <p class="model">Samsung Z Fold 2</p><br>
+         <img src="FoldImg/ZF2.png" class="img">
+		 <p class="price">Price:$1999</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openZF2()"><br>
+	    </td>	   
+	  
+		<td>
+		 <p class="model">Apple Iphone 12 pro max</p><br>
+         <img src="AppleImg/Iphone12PM.png" class="img">
+		 <p class="price">Price:$1099</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="open12PM()">
+	    </td>
+
+		<td>
+		 <p class="model">LG Wing</p><br>
+         <img src="FoldImg/W.png" class="img">
+		 <p class="price">Price:$999</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openW()">
+	    </td>
+		
+		<td>
+		 <p class="model">Huawei Mate 40 pro</p><br>
+         <img src="huaweiImg/M40.png" class="img">
+		 <p class="price">Price:$1299</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openM40P()">
+	    </td>
+		
+	    <td>
+		 <p class="model">Xiaomi Mi 11</p><br>
+         <img src="XiaomiImg/M11.png" class="img">
+		 <p class="price">Price:$610</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openM11()">
+	    </td>
+     </tr>	
+	  </div>
+  
+ </table>
+<!--End table--->
+
+<!--start table---> 
+     <table class="tab" id="fold">
+	 <caption class="cap">_____________________Foldable Phones_____________________</caption>
+	  <div class="fold">
+	   <tr>
+		<td>
+		 <p class="model">Samsung Z Fold 2</p><br>
+         <img src="FoldImg/ZF2.png" class="img">
+		 <p class="price">Price:$1999</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openZF2()"><br>
+	    </td>	   
+	  
+		<td>
+		 <p class="model">Huawei Mate XS</p><br>
+         <img src="FoldImg/MXS.png" class="img">
+		 <p class="price">Price:$2999</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openMXS()">
+	    </td>
+
+		<td>
+		 <p class="model">LG Wing</p><br>
+         <img src="FoldImg/W.png" class="img">
+		 <p class="price">Price:$999</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openW()">
+	    </td>
+		
+		<td>
+		 <p class="model">Samsung Z Flip</p><br>
+         <img src="FoldImg/F.png" class="img">
+		 <p class="price">Price:$899</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openF()">
+	    </td>
+		
+	    <td>
+		 <p class="model">Microsoft surface duo</p><br>
+         <img src="FoldImg/D.png" class="img">
+		 <p class="price">Price:$1399</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openD()">
+	    </td>
+     </tr>	
+	  </div>
+  
+ </table>
+<!--End table--->
+
+	<!--start table---> 
+     <table class="tab" id="sam">
+	 <caption class="cap">_____________________Best Seller_____________________</caption>
+	  <div class="fold">
+	   <tr>
+		<td>
+		 <p class="model">Samsung Note20 Ultra</p><br>
+         <img src="SamImg/Note20U.png" class="img">
+		 <p class="price">Price:$1099</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openN20U()">
+	    </td>	   
+	  
+		<td>
+		 <p class="model">Apple Iphone 12</p><br>
+         <img src="AppleImg/Iphone12.png" class="img">
+		 <p class="price">Price:$699</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="open12()">
+	    </td>
+
+		<td>
+		 <p class="model">Apple Iphone 11</p><br>
+         <img src="AppleImg/Iphone11.png" class="img">
+		 <p class="price">Price:$499</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="open11()">
+	    </td>
+		
+		<td>
+		 <p class="model">OnePlus nord</p><br>
+         <img src="OnePlusImg/N.png" class="img">
+		 <p class="price">Price:$349</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openN()">
+	    </td>
+		
+	    <td>
+		 <p class="model">Samsung S20 fe</p><br>
+         <img src="SamImg/S20Fe.png" class="img">
+		 <p class="price">Price:$599</p>
+		 <input type="button" value="Add to cart" class="cartBTN"><br>
+		 <input type="button" value="View details" class="viewBTN"  onclick="openS20FE()">
+	    </td>
+     </tr>	
+	  </div>
+  
+ </table>
+<!--End table--->
+
+
+<div class="cartPage">
+ <div class="cart">
+			<button class="CartClose">X</button>
+			<h1>Cart</h1>
+			<table class="CartTableSh" border="8">
+			</table>
+			<button id="CartBuy" onclick="buy()">Buy now</button>
+			
+ </div>
+</div>	
+
+<!-------footer------------>
+  <div class="footer">
+    <div class="FBox">
+      <div class="FRow">
+        <div class="FCol">
+          <h3>Download Our App</h3>
+           <p>Download App For Android And IOS </p>
+            <div class="logos">
+             <img src="play-store.png">
+              <img src="app-store.png">
+            </div>
+        </div>
+         <div class="FCol2">
+           <img src="logo.png" >
+            <p>Bset place to shop Mobiles world!</p>
+         </div>
+          <div class="FCol3">
+            <h3>Useful Links </h3>
+             <ul>
+               <li>Our services</li>
+               <li>Refund and exchange policy</li>
+               <li>Our branches</li>
+               <li>Technical support</li>
+             </ul>
+          </div>
+           <div class="FCol4">
+            <h3>FOLLOW US </h3>
+             <ul>
+               <li>Facebook</li>
+               <li>Twitter</li>
+               <li>Instagram</li>
+               <li>You Tube</li>
+             </ul>
+           </div>
+      </div>
+    </div>
+  </div>
+
+
+	
+    <script src="MobileShop.js"></script>		
+</body>
+</html>

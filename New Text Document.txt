@@ -1,0 +1,548 @@
+ <tr>
+	   <td><select name="color" value="Color" class="color">
+	     <option>Bronze</option>
+         <option>Black</option>	
+ 		 
+	    </select> 
+		<select name="size" class="size" id="siz"> 
+         <option value="1">256GB</option>   		
+         <option value="0.1">512GB</option>	  
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">	
+	     <option>Black </option>	  		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+		 <option>256GB</option> 
+         <option>512GB</option>   		  		 
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">
+	     <option>White </option>
+  	     <option>Black </option>	 		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+         <option>128GB</option>	  
+         <option>256GB</option>	 		 
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">
+	     <option>Purple </option>	 
+	     <option>Black</option>	
+          
+ 		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+         <option>128GB</option>	  
+         <option>256GB</option>
+	    </select>
+	   </td>
+	   <td>
+	   <select name="color" value="Color" class="color">
+	     <option>White </option>
+         <option>Black</option>	  		 
+	    </select> 
+	   
+	   	<select name="size" value="Size" class="size">
+         <option>256GB</option>	  
+         <option>512GB</option>	 
+	    </select> 
+	   </td>
+      </tr>
+
+ <tr>
+	   <td><select name="color" value="Color" class="color">
+	     <option>Bronze</option>	
+         <option>Black</option>	  
+         <option>white</option>	 		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+		 <option>128GB</option>	
+         <option>256GB</option>	  		 
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">
+	     <option>Bronze</option>
+         <option>Green</option>	  		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+		 <option>128GB</option>	
+         <option>256GB</option>	   		 		 
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">
+	     <option>Grey</option>	
+         <option>Black</option>	  
+         <option>white</option>	 		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+		 <option>128GB</option>	
+         <option>256GB</option>	   	 		 
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">
+	     <option>Grey</option>
+		 <option>Blue</option>
+         <option>white</option>	 		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+		 <option>128GB</option>	
+         <option>256GB</option>	  		 
+	    </select>
+	   </td>
+	   <td>
+	   <select name="color" value="Color" class="color">
+	     <option>Blue</option>
+         <option>Green</option>	
+		 <option>Red</option>		 
+         <option>white</option>	 		 
+	    </select> 
+	   
+	   	<select name="size" value="Size" class="size">
+         <option>128GB</option>	  
+         <option>256GB</option>	 		 
+	    </select> 
+	   </td>
+      </tr>
+
+<tr>
+	   <td><select name="color" value="Color" class="color">
+	     <option>Black</option>	
+         <option>Aoura Glow</option>	  
+         <option>white</option>	 		 
+	    </select> 
+		<select name="size" value="Size" class="size">  
+         <option>256GB</option>	  
+         <option>512GB</option> 
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">
+	     <option>Blue</option>	 
+         <option>Black</option>	  
+         <option>white</option>	 		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+         <option>64GB</option>	  
+         <option>128GB</option>	 		 
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">	  
+         <option>white</option>
+         <option>Black</option>		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+         <option>64GB</option>	  
+         <option>128GB</option>	 		 
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">
+	     <option>Red</option>
+         <option>Black</option>	  
+         <option>white</option>	 		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+         <option>64GB</option>	  
+         <option>128GB</option>	 		 
+	    </select>
+	   </td>
+	   <td>
+	   <select name="color" value="Color" class="color">
+	     <option>Blue</option>
+         <option>Black</option>	  
+         <option>white</option>	 		 
+	    </select> 
+	   
+	   	<select name="size" value="Size" class="size">
+         <option>64GB</option>	  
+         <option>128GB</option>	 		 
+	    </select> 
+	   </td>
+      </tr>
+
+<tr>
+	   <td><select name="color" value="Color" class="color">
+	     <option>Black</option>	
+         <option>Blue</option>
+		 <option>Gold</option>
+         <option>white</option>	 		 
+	    </select> 
+		<select name="size" value="Size" class="size"> 
+         <option>128GB</option>   		
+         <option>256GB</option>	  
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">	     
+         <option>Blue</option>
+		 <option>Black</option>	
+		 <option>Gold</option>
+         <option>white</option>	 		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+         <option>128GB</option>   		
+         <option>256GB</option>	   		 
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">	
+	     <option>Blue</option>
+		 <option>Red</option>
+         <option>white</option>
+         <option>Black</option>		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+         <option>64GB</option>	  
+         <option>128GB</option>	 		 
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">
+	     <option>Gold</option>
+         <option>Black</option>	  
+         <option>white</option>	 		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+         <option>64GB</option>	  
+         <option>256GB</option>
+	    </select>
+	   </td>
+	   <td>
+	   <select name="color" value="Color" class="color">
+	     <option>Green</option>
+         <option>Black</option>	  
+         <option>white</option> 		 
+	    </select> 
+	   
+	   	<select name="size" value="Size" class="size">
+         <option>64GB</option>	  
+         <option>256GB</option>	 
+	    </select> 
+	   </td>
+      </tr>
+
+ <tr>
+	   <td><select name="color" value="Color" class="color">
+	     <option>Purple</option>	
+         <option>Red</option>
+		 <option>Black</option>
+         <option>white</option>	 		 
+	    </select> 
+		<select name="size" value="Size" class="size"> 
+		 <option>64GB</option> 
+         <option>128GB</option>   		 
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">	     
+         <option>Orange</option>
+		 <option>Black</option>	
+		 <option>Blue</option>
+         <option>white</option>	 		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+		 <option>64GB</option> 
+         <option>128GB</option>   		 		 
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">	
+		 <option>Gold</option>
+         <option>white</option>
+         <option>Black</option>		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+         <option>64GB</option>	  
+         <option>256GB</option>	 		 
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">
+	     <option>white</option>	
+	     <option>Gold</option>
+         <option>Black</option>	  
+ 		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+         <option>64GB</option>	  
+         <option>256GB</option>
+	    </select>
+	   </td>
+	   <td>
+	   <select name="color" value="Color" class="color">
+	     <option>Red</option>
+         <option>Black</option>	  
+         <option>white</option> 		 
+	    </select> 
+	   
+	   	<select name="size" value="Size" class="size">
+         <option>64GB</option>	  
+         <option>128GB</option>	 
+	    </select> 
+	   </td>
+      </tr>
+
+ <tr>
+	   <td><select name="color" value="Color" class="color">
+         <option>white</option>	
+ 		 <option>Black</option>
+	    </select> 
+		<select name="size" value="Size" class="size"> 
+         <option>256GB</option>   		
+         <option>512GB</option>	  
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">	
+	     <option>Black </option>
+         <option>white</option>	 		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+		 <option>128GB</option> 
+         <option>256GB</option>   		  		 
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">	
+         <option>Red</option>
+         <option>White</option>		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+         <option>128GB</option>	  
+         <option>256GB</option>	 		 
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">
+	     <option>Purple </option>
+	     <option>Blue </option>	 
+	     <option>white</option>	
+          
+ 		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+         <option>64GB</option>	  
+         <option>128GB</option>
+	    </select>
+	   </td>
+	   <td>
+	   <select name="color" value="Color" class="color">
+	     <option>Purble </option>
+         <option>Green</option>	  
+         <option>white</option> 		 
+	    </select> 
+	   
+	   	<select name="size" value="Size" class="size">
+         <option>64GB</option>	  
+         <option>128GB</option>	 
+	    </select> 
+	   </td>
+      </tr>
+
+<tr>
+	   <td><select name="color" value="Color" class="color">
+         <option>Green</option>	
+ 		 <option>Blue</option>
+	    </select> 
+		<select name="size" value="Size" class="size"> 
+         <option>128GB</option>   		
+         <option>256GB</option>	  
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">	
+	     <option>Blue </option>	 
+	     <option>Green</option>	 		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+		 <option>128GB</option> 
+         <option>256GB</option>   		  		 
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">	
+  	     <option>Blue </option>	 
+	     <option>Green</option>			 
+	    </select> 
+		<select name="size" value="Size" class="size">
+         <option>128GB</option>	  
+         <option>256GB</option>	 		 
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">
+	     <option>Blue </option>	 
+	     <option>Green</option>	
+          
+ 		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+         <option>128GB</option>	  
+         <option>256GB</option>
+	    </select>
+	   </td>
+	   <td>
+	   <select name="color" value="Color" class="color">
+	     <option>blue </option>
+         <option>Green</option>	  		 
+	    </select> 
+	   
+	   	<select name="size" value="Size" class="size">
+         <option>64GB</option>	  
+         <option>128GB</option>	 
+	    </select> 
+	   </td>
+      </tr>
+
+<tr>
+	   <td><select name="color" value="Color" class="color">
+	     <option>Orange</option>	
+		 <option>Black</option>
+         <option>white</option>	 		 
+	    </select> 
+		<select name="size" value="Size" class="size"> 
+         <option>128GB</option>   		
+         <option>256GB</option>	  
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">	     
+		 <option>Black</option>	
+		 <option>Blue</option>
+         <option>white</option>	 		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+		 <option>64GB</option> 
+         <option>128GB</option>   		  		 
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">	
+		 <option>Blue</option>
+         <option>white</option>
+         <option>Black</option>		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+         <option>64GB</option>	  
+         <option>128GB</option>	 		 
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">
+	     
+	     		     
+         <option>Black</option>
+		 <option>white</option>
+ 		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+         <option>64GB</option>	  
+         <option>128GB</option>
+	    </select>
+	   </td>
+	   <td>
+	   <select name="color" value="Color" class="color">
+         <option>Blue</option>	  
+         <option>white</option> 		 
+	    </select> 
+	   
+	   	<select name="size" value="Size" class="size">
+         <option>64GB</option>	  
+         <option>128GB</option>	 
+	    </select> 
+	   </td>
+      </tr>
+
+<tr>
+	   <td><select name="color" value="Color" class="color">
+         <option>Blue </option>
+		 <option>Black</option>
+         <option>white</option>	 		 
+	    </select> 
+		<select name="size" value="Size" class="size"> 
+         <option>128GB</option>   		
+         <option>256GB</option>	  
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">	     
+		 <option>Black</option>	
+         <option>white</option>	 		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+		 <option>64GB</option> 
+         <option>128GB</option>   		  		 
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">	
+		 <option>purple</option>
+         <option>white</option>
+         <option>Black</option>		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+         <option>64GB</option>	  
+         <option>128GB</option>	 		 
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">
+	     <option>Black</option>	 
+	     <option>white</option>	
+          
+ 		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+         <option>64GB</option>	  
+         <option>128GB</option>
+	    </select>
+	   </td>
+	   <td>
+	   <select name="color" value="Color" class="color">
+	     <option>Blue </option>
+         <option>Black</option>	  
+         <option>white</option> 		 
+	    </select> 
+	   
+	   	<select name="size" value="Size" class="size">
+         <option>32GB</option>	  
+         <option>64GB</option>	 
+	    </select> 
+	   </td>
+      </tr>
+
+<tr>
+	   <td><select name="color" value="Color" class="color">
+         <option>Blue </option>
+		 <option>Green</option>
+         <option>white</option>	 		 
+	    </select> 
+		<select name="size" value="Size" class="size"> 
+         <option>128GB</option>   		
+         <option>256GB</option>	  
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">	
+	     <option>Blue </option>
+         <option>white</option>	 		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+		 <option>64GB</option> 
+         <option>128GB</option>   		  		 
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">	
+         <option>white</option>
+         <option>Blue</option>		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+         <option>64GB</option>	  
+         <option>128GB</option>	 		 
+	    </select>
+	   </td>
+	   <td><select name="color" value="Color" class="color">
+	     <option>Green </option>
+	     <option>Blue</option>	 
+	     <option>white</option>	
+          
+ 		 
+	    </select> 
+		<select name="size" value="Size" class="size">
+         <option>32GB</option>	  
+         <option>64GB</option>
+	    </select>
+	   </td>
+	   <td>
+	   <select name="color" value="Color" class="color">
+	     <option>Blue </option>
+         <option>Green</option>	  
+         <option>white</option> 		 
+	    </select> 
+	   
+	   	<select name="size" value="Size" class="size">
+         <option>32GB</option>	  
+         <option>64GB</option>	 
+	    </select> 
+	   </td>
+      </tr>
